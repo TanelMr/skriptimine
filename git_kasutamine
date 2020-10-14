@@ -1,0 +1,16 @@
+root kasutajana:
+apt update 
+apt get-install git
+
+tavakasutajana:
+määrata kasutaja, email ja tekstiredaktor
+git config --global user.name "Tanel Märjama"
+git config --global user.mail tanel.marjama@khk.ee
+git config --global core.editor nano
+
+loo kataloog kus skriptima hakkad: mkdir "skriptimine"
+sisene kausta: cd "skriptimine"
+tekita lokaalne repositoorium git süsteemi jaoks antud kausta 
+git init
+
+Tehtud!
