@@ -13,4 +13,11 @@ sisene kausta: cd "skriptimine"
 tekita lokaalne repositoorium git süsteemi jaoks antud kausta 
 git init
 
+#
+iga faili muudatuse korral:
+1) git status - kontrolli et fail on muudetud
+2) git add failinimi - lisa muudetud fail jälgimisele
+3) git commit -m "kirjeldus" - koosta muudetuse kirjeldus
+4) git log - kontrolli, et commit on salvestatud
+
 Tehtud!
