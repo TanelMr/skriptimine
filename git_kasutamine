@@ -21,3 +21,10 @@ iga faili muudatuse korral:
 4) git log - kontrolli, et commit on salvestatud
 
 Tehtud!!!
+
+Remote seadistamine:
+a)git remote add nimi aadress
+git remote add skriptimine https://github.com/kasutajanimi/reponimi.git
+
+b)git remote kontroll
+git remote -v
