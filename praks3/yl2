@@ -1,0 +1,7 @@
+#!/bin/bash
+#skript milles defineerin erinevad muutujad, seon need muutujad omakorda muutuja abil kokku ja väljastan ekraanile
+aasta=2016.
+president=" Kersti Kaljulaid"
+lause_keskosa=" aastal valiti Eesti presidendiks"
+lause=$aasta$lause_keskosa$president
+echo "$lause"
