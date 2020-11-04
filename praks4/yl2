@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#Skript mis küsib kasutajalt reisijate arvu bussis ja bussis olemasolevate kohtade arvu. Väljastab ekraanile mitu bussi on vaja, et kõik reisijad ära mahuks.
+
+echo "Mitu reisijat on grupis:"
+read reisijad
+echo "Mitu kohta on bussis:"
+read kohad
+t2is_bussid=$(expr $reisijad / $kohad)
+j22k=$(expr $kohad \* $t2is_bussid)
+ilma_bussita=$(expr $reisijad - $j22k)
+
+if [ $ilma_bussita -gt 0 ]
+then 
+	buss=$(expr $t2is_bussid + 1)
+	echo "Kokku on vaja $buss bussi"
+else 
+	echo "Kokku on vaja $t2is_bussid bussi"
+fi 
