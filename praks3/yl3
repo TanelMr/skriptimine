@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#Skript mis küsib kasutajalt ainepunktide arvu ja nädalate arvu, jagab ainepunktide arvu nädalate arvuga, ümardab saadud tulemuse täisarvuni ja väljastab ekraanile
+#
+echo "Sisestage ainepunktide arv:"
+read ainepunktid
+echo "Sisestage nädalate arv:"
+read n2dalad
+tulemus= echo "scale=1;$ainepunktid/$n2dalad" | bc 
+#tulemus_ym= echo "($tulemus + 0.9)/1" | bc
+#echo $tulemus_ym
+
