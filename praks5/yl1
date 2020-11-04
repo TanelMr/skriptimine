@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#Skript mis küsib kasutaja käes tema vanuse ja väjastab ekraanile eale vastava termini "täiskasvanu", "laps" jne...#
+
+echo "Sisesta oma vanus:"
+read vanus
+
+if [ $vanus -gt 0 -a $vanus -lt 11 ] ; then
+	echo "Sa oled laps"
+elif [ $vanus -gt 11 -a $vanus -lt 21 ] ; then
+	echo "Sa oled nooruk"
+elif [ $vanus -gt 21 -a $vanus -lt 60 ] ; then
+	echo "Sa oled täiskasvanu"
+elif [ $vanus -gt 60 -a $vanus -lt 110 ] ; then 
+	echo "Sa oled seenior"
+elif [ $vanus -gt 110 ] ; then
+	echo "Sa oled surnud"
+else	echo "Vale parameeter"
+
+fi	 
