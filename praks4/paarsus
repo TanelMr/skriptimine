@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#Skript milles kirjutad skripti käivitamisel skripti nime taha arvu ja ta väljastab ekraanile kas arv on paaris või paaritu
+
+
+
+jaak=$(( $1 % 2 ))
+if [ $jaak -eq 0 ]
+then
+echo "Sisestatud arv on paarisarv"
+else
+echo "Sisestatud arv on paaritu arv"
+fi
+
