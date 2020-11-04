@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Skript mis küsib kasutajalt reisijate arvu bussis ja bussis olemasolevate kohtade arvu. Väljastab ekraanile mitu inimest mahtus bussi ja mitu jäi maha
+
+echo "Mitu reisijat on grupis:"
+read reisijad
+echo "Mitu kohta on bussis:"
+read kohad
+t2is_bussid=$(expr $reisijad / $kohad)
+j22k=$(expr $kohad \* $t2is_bussid)
+ilma_bussita=$(expr $reisijad - $j22k)
+echo "Täidetud busside arv:$t2is_bussid"
+echo "Maha jäänud reisijate arv:$ilma_bussita"
