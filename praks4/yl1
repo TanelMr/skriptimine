@@ -1,0 +1,14 @@
+!#/bin/bash
+
+#Skript mis küsib kasutajalt arvu ja väljastab ekraanile kas arv on paaris või paaritu
+
+echo "Sisesta vabalt valitud täisarv: "
+read arv
+jaak=$(( $arv % 2 ))
+if [ $jaak -eq 0 ]
+then
+echo "$arv on paarisarv"
+else
+echo "$arv on paaritu arv"
+fi
+
