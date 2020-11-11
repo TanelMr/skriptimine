@@ -1,0 +1,13 @@
+#!/bin/bash
+
+### Skripti nimi: Info ###
+### Skripti looja: Tanel Märjama ###
+### Skripti kirjeldus: Antud skript väljastab käivitades kasutajale tema ###
+### kasutajanime koos tervitusega ja hetke kellaaja ning kuupäeva.       ###
+
+kasutaja=$(whoami)
+kell=$(date +"%H:%M")
+kuup2ev=$(date +"%D")
+
+echo "Tere, $kasutaja!"
+echo "Täna on $kuup2ev kell $kell"
