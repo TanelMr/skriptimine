@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#Skript mis palub kasutajal sisestada ühe numbri ja seejärel ütleb kas#
+#sisestatud arv on algarv või mitte			              #
+
+echo "Palun sisesta üks number:"
+read number
+
+if [ $number -eq 0 -o $number -eq 1 ]; then
+	echo "$number ei ole algarv"
+else 
+	jagaja=2
+	j22k=$(($number % $jagaja))
+	while [ $j22k -ne 0 ]
+	do
+		jagaja=$(($jagaja + 1))
+		j22k=$(($number % $jagaja))
+	done
+	if [ $number -eq $jagaja ]; then
+		echo "$number on algarv"
+	else 
+		echo "$number ei ole algarv"
+	fi
+fi
