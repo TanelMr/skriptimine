@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#Skript mis küsib kasutajalt ridade arvu, tärnide arvu reas, ning seejärel väljastab#
+#need ekraanile							                    #
+
+echo "Sisesta ridade arv:"
+read ridade_arv
+echo "Sisesta tärnide arv:"
+read t2rnid
+ 
+for (( i = 1; i <= $ridade_arv; i++ )); do
+echo -n "$i."
+	for (( j = 1; j <= $t2rnid; j++ )); do
+	echo -n  "x"
+	done
+	echo ""
+done
