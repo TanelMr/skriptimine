@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#Skript mis väljastab 20 esimest arvu ja ütleb igaühe kohta kas ta on algarv või mitte#
+
+echo "20 esimest numbrit ja selgitus kas antud arv on algarv või mitte:"
+
+for (( number=1; number<=20; number++)); do
+if [ $number -eq 0 -o $number -eq 1 ]; then
+	echo "$number ei ole algarv"
+else 
+	jagaja=2
+	j22k=$(($number % $jagaja))
+	while [ $j22k -ne 0 ]
+	do
+		jagaja=$(($jagaja + 1))
+		j22k=$(($number % $jagaja))
+	done
+	if [ $number -eq $jagaja ]; then
+		echo "$number on algarv"
+	else 
+		echo "$number ei ole algarv"
+	fi
+fi
+done
