@@ -1,7 +1,8 @@
 #!/bin/bash
 
-#skript mis näitab käivitamisel hetke aega, kuupäeva ja kalendris 
-
-echo "Today is $(date +%A), $(date +%B) $(date +%d), $(date +%Y) "
+#skript mis näitab käivitamisel hetke aega, kuupäeva ja kalendrit# 
+echo ""
+echo "Today is $(date +%A), $(date +%B) $(date +%d), $(date +%Y)"
 echo "Time is $(date +%H):$(date +%M)"
-echo "Calendar of$(cal) "
+echo ""
+echo "Calendar of$(cal)"
