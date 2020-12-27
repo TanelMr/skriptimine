@@ -4,4 +4,5 @@
 
 kasutaja=$(whoami)
 
-echo "Tere, $kasutaja ! "
+echo "Tere, $kasutaja"
+echo "!"
